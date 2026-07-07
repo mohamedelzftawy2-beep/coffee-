@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background:rgb(172, 171, 170);
+}
+
+/* header */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid rgb(135, 129, 129);
+    box-shadow: 0 0 20px black;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 20px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.header .navbar ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 500;
+    font-weight: 500;
+    position: relative;
+}
+
+.header .navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.header .navbar ul a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: rgb(49, 36, 35);
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: 0.4s;
+
+}
+
+.header .navbar ul a:hover {
+    color: rgb(10, 44, 156);
+}
+
+.header .navbar ul a:hover::after {
+    width: 100%;
+
+}
+
+/* home */
+.coffee-home {
+    width: 350px;
+
+}
+
+.coffee-home:hover {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+.continer p {
+    width: 500px;
+}
+
+.continer {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(135, 129, 129);
+    box-shadow: 0 0 20px black;
+    gap: 200px;
+    background-image: url(../imgs/home-bg.png);
+    background-size: cover;
+    background-position: right;
+
+}
+
+.continer .text {
+    line-height: 30px;
+    color: rgb(47, 33, 33);
+    font-size: large;
+    font-weight: 700;
+}
+
+.continer .text h1 {
+    width: 400px;
+    line-height: 60px;
+    margin-left: 10px;
+    font-size: 50px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.continer .text p {
+    padding-bottom: 50px;
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(47, 33, 33);
+    border: 1px solid rgb(255, 166, 0);
+    margin-left: 60px;
+    padding: 10px;
+    background-color: rgb(255, 170, 0);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    box-shadow: 
+        0 0 20px orange,
+        0 0 50px orange,
+        0 0 60px orange;
+    transition: all 0.4s ease;
+}
+
+/* about */
+.container-about {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(135, 129, 129);
+    box-shadow: 0 0 20px black;
+    gap: 200px;
+    background-image: url(../imgs/home-bg.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.about-img {
+    width: 350px;
+    margin-left: 50px;
+}
+
+.about-img:hover {
+    transform: scale(0.9);
+    transition: 0.4s;
+}
+
+.container-about .text-about {
+    line-height: 30px;
+    color: rgb(47, 33, 33);
+    font-weight: 800;
+}
+
+.container-about .text-about .coffeine {
+    color: rgb(146, 125, 100);
+    margin-right: 10px;
+    letter-spacing: 3px;
+    font-size: 30px;
+
+}
+
+.container-about .text-about h4 {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.container-about .text-about p {
+    margin: 10px 0 10px 20px;
+    width: 600px;
+
+}
+
+/* menu */
+.continer-menu {
+    height: 750px;
+    border-bottom: 1px solid rgb(135, 129, 129);
+    box-shadow: 0 0  20px black;
+    padding: 40px 40px;
+}
+
+.continer-menu .text-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.continer-menu .text-menu {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.continer-menu .text-menu h2 {
+    font-weight: 700;
+}
+
+.continer-menu .text-menu h6 {
+    font-size: 15px;
+    font-weight: 700;
+    color:rgb(146, 125, 100) ;
+
+}
+
+.continer-menu .row .col .items {
+    background-color: white;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(40, 39, 39);
+    border-radius: 20px;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px black;
+
+
+
+}
+
+.continer-menu .row .col .items img {
+    width: 90px;
+    margin-left: -30px;
+    margin-right: 20px;
+}
+
+.continer-menu .row .col .items .price {
+    border: 1px solid rgb(30, 255, 0);
+    width: 53px;
+    height: 33px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 6px 6px;
+    background-color: rgb(30, 255, 0);
+    box-shadow:
+        0 0 2px rgb(30, 255, 0),
+        0 0 4px rgb(30, 255, 0),
+        0 0 6px rgb(30, 255, 0);
+}
+
+.continer-menu .row {
+    display: flex;
+    gap: 200px;
+
+}
+
+.continer-menu .row .col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.continer-menu .row .col .items:hover {
+    transform: scale(1.1);
+    box-shadow:
+        0 0 4px white,
+        0 0 6px white,
+        0 0 8px white;
+    border: 1px solid white;
+    transition: all 0.4s ease;
+}
+/* testimonials */
+.continer-test{
+    height: 500px;
+    padding: 40px 40px;
+    border-bottom: 1px solid rgb(135, 129, 129);
+    box-shadow: 2px 2px 20px black;
+}
+.continer-test .text-test{
+    margin-left: 370px;
+
+}
+.continer-test .clients img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0px 40px;
+    object-fit:cover ;
+    border: 5px solid white;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    box-shadow: 
+    0 0 3px white,
+    0 0 5px white,
+    0 0 8px white;
+
+}
+.continer-test .clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+.continer-test .clients .client{
+    background-color: #d0cecb;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.continer-test .clients h2{
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+.continer-test .clients .client:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px black,0 0 10px black;
+    transition: all 0.4s ease;
+
+}
+/* contact */
+.continer-contact{
+    height: 550;
+    padding: 30px 30px ;
+    width: 100%;
+
+}
+.continer-contact .text-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -20px;
+    font-weight: 700;
+    font-size: large;
+    margin-bottom: 20px;
+
+}
+.continer-contact .contact{
+    border: 1px solid rgb(255, 255, 255);
+    width: 30%;
+    height: 100%;
+    padding: 20px 20px;
+    background-color: white;
+    margin-left: 800px;
+    margin-top: -450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 
+    0 0 5px white,
+    0 0 8px white,
+    0 0 11px white;
+}
+.continer-contact .contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.continer-contact .contact form input{
+    display: block;
+    border:1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px black,0 3px 5px black;
+    height: 40px;
+    padding: 10px 10px ;
+    color:black;
+    font-size: medium;
+    font-weight: 600;
+    background-color: transparent;
+
+
+}
+.continer-contact .contact form input::placeholder{
+    padding:10px 10px ;
+    color:black;
+    font-size: medium;
+    font-weight: 600;
+
+}
+.continer-contact .contact form textarea{
+    padding: 10px 10px ;
+    color:black;
+    font-size: medium;
+    font-weight: 600;
+}
+.continer-contact .contact form textarea::placeholder{
+    color:black;
+    font-size: medium;
+    font-weight: 600;
+}
+.continer-contact .contact .btn-contact{
+    width: 90%;
+    color: rgb(47, 33, 33);
+    border: 1px solid rgb(255, 166, 0);
+    background-color: rgb(255, 170, 0);
+    border-radius: 20px;
+    margin-left: 15px;
+    height: 30px;
+} 
+.btn-contact:hover {
+    box-shadow: 
+        0 0 20px orange,
+        0 0 50px orange,
+        0 0 60px orange;
+    transition: all 0.4s ease;
+}
+/* footer */
+footer{
+    background-image: url(../imgs/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+}
+footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+}
+footer .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+footer .navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+}
+footer .navbar li{
+    list-style: none;
+    margin-top: 5px;
+}
+footer .navbar li a:hover{
+    color: wheat;
+
+}
+footer .row .col .navbar h5{
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    margin-left: -50px;
+}
+footer .row .col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+    margin-right: 50px;
+    margin-left:5px ;
+
+}
+footer .row .col ul li{
+    list-style: none;
+    margin-top: 5px;
+}
+footer .row .col ul li a:hover{
+    color: wheat;
+}
+footer .row .col ul li i{
+    color: white;
+}
+footer .row .col h5{
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    margin-left: -5px;
+}
+footer .row .col p{
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.owner{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3f3f3e;
+}
+.owner h6{
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
