@@ -339,7 +339,7 @@ body {
 }
 /* contact */
 .continer-contact{
-    height: 550;
+    height: 550px;
     padding: 30px 30px ;
     width: 100%;
 
@@ -507,6 +507,276 @@ footer .row .col p{
     color: white;
     font-size: medium;
     font-weight: 700;
+}
+
+/* Responsive layout */
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    .header {
+        height: auto;
+        min-height: 76px;
+        z-index: 10;
+    }
+
+    .header .navbar {
+        margin: 0;
+        padding: 14px 24px;
+        gap: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .header .navbar ul {
+        gap: 16px;
+    }
+
+    .continer,
+    .container-about {
+        height: auto;
+        min-height: 600px;
+        gap: 50px;
+        padding: 120px 32px 60px;
+    }
+
+    .continer p,
+    .container-about .text-about p {
+        width: auto;
+        max-width: 480px;
+    }
+
+    .continer .text h1 {
+        width: auto;
+        max-width: 420px;
+        font-size: clamp(2.25rem, 6vw, 3.5rem);
+        line-height: 1.2;
+    }
+
+    .continer-menu {
+        height: auto;
+        min-height: 750px;
+    }
+
+    .continer-menu .row {
+        gap: 30px;
+    }
+
+    .continer-menu .row .col .items {
+        width: min(100%, 420px);
+    }
+
+    .continer-test {
+        height: auto;
+        min-height: 500px;
+    }
+
+    .continer-test .text-test {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .continer-contact {
+        height: auto;
+    }
+
+    .continer-contact .contact {
+        width: 45%;
+        margin-left: 52%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer .row {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .header .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 12px 18px;
+    }
+
+    .header .navbar ul {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .header .navbar ul a {
+        font-size: 0.78rem;
+    }
+
+    .continer,
+    .container-about {
+        min-height: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 190px 20px 55px;
+        text-align: center;
+    }
+
+    .continer .text,
+    .container-about .text-about {
+        line-height: 1.7;
+    }
+
+    .continer .text h1 {
+        margin: 12px auto;
+        padding: 10px 0;
+        font-size: clamp(2rem, 11vw, 3rem);
+    }
+
+    .continer .text p {
+        padding-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    .coffee-home,
+    .about-img {
+        width: min(75vw, 280px);
+        margin: 0;
+    }
+
+    .container-about {
+        padding-top: 55px;
+    }
+
+    .container-about .text-about .coffeine {
+        display: block;
+        margin: 0 0 8px;
+        font-size: 1.7rem;
+    }
+
+    .container-about .text-about p {
+        margin: 10px 0 20px;
+    }
+
+    .continer-menu {
+        padding: 45px 16px;
+    }
+
+    .continer-menu .text-main {
+        margin-bottom: 30px;
+    }
+
+    .continer-menu .row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .continer-menu .row .col {
+        gap: 16px;
+    }
+
+    .continer-menu .row .col .items {
+        width: 100%;
+        min-height: 100px;
+        height: auto;
+        border-radius: 14px;
+    }
+
+    .continer-menu .row .col .items img {
+        width: 70px;
+        margin-left: -18px;
+        margin-right: 8px;
+    }
+
+    .continer-menu .row .col .items p {
+        font-size: 0.82rem;
+    }
+
+    .continer-test {
+        padding: 45px 16px;
+    }
+
+    .continer-test .clients {
+        flex-direction: column;
+        gap: 45px;
+        margin-top: 70px;
+    }
+
+    .continer-test .clients .client {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .continer-contact {
+        padding: 45px 16px;
+    }
+
+    .continer-contact .text-contact {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .continer-contact .map iframe {
+        display: block;
+        width: 100%;
+        height: 280px;
+    }
+
+    .continer-contact .contact {
+        width: 100%;
+        height: auto;
+        margin: 24px 0 0;
+        padding: 24px 18px;
+    }
+
+    .continer-contact .contact form,
+    .continer-contact .contact form input,
+    .continer-contact .contact form textarea {
+        width: 100%;
+    }
+
+    .continer-contact .contact .btn-contact {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    footer .row {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 40px 24px;
+    }
+
+    footer .row .col p {
+        width: auto;
+        max-width: 100%;
+    }
+
+    footer .row .col .navbar h5 {
+        margin-left: 0;
+    }
+
+    .owner {
+        padding: 0 16px;
+        text-align: center;
+    }
 }
 
 
